@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context="in.raman.raman.fifastar.StartActivity">
+
+    <Button
+        android:text="Register now "
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proceed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/register"
+        android:layout_width="250dp" />
+
+    <TextView
+        android:text="Welcome to NM Game Club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#343434"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="267dp" />
+
+    <Button
+        android:text="Proceed to Tournament"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:id="@+id/proceed"
+        android:textColor="#ffff"
+        android:backgroundTint="#1ba1ee"
+        android:layout_width="250dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/register" />
+
+    <TextView
+        android:text="Loading Entries...Please wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:textColor="#000000"
+        android:id="@+id/startAnnounce"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Voting"
+        android:layout_height="wrap_content"
+        android:id="@+id/voting"
+        android:textColor="#ffff"
+        android:backgroundTint="#1ba1ee"
+        android:layout_width="250dp"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/applogo1"
+        android:id="@+id/logo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/announce"
+        android:id="@+id/announce"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/proceed" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_annouuncement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="in.raman.raman.fifastar.Annouuncement">
+
+
+    <TextView
+        android:text="Announcements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <ImageView
+        app:srcCompat="@drawable/white"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/announceImage"
+        android:layout_width="340dp"
+        android:layout_height="340dp" />
+
+    <TextView
+        android:text="Loading... Please wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/announceImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:id="@+id/loading" />
+</RelativeLayout>

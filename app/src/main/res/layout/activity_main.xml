@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.raman.raman.fifastar.MainActivity">
+
+    <Button
+        android:text="Rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/points_btn"
+        android:layout_alignStart="@+id/topscorer_btn"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:width="140dp"
+        android:textSize="14sp"
+        android:height="60dp"
+        android:textStyle="bold"
+        android:id="@+id/rulesBtn" />
+
+    <ImageView
+        app:srcCompat="@drawable/rules"
+        android:id="@+id/rules_image"
+        android:layout_alignTop="@+id/points_table"
+        android:layout_alignStart="@+id/golden_boot"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/golden_boot"
+        android:layout_marginStart="34dp"
+        android:id="@+id/golden_boot"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/CL_btn"
+        android:layout_alignStart="@+id/topscorer_btn" />
+
+    <Button
+        android:text="Fixtures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:width="140dp"
+        android:height="60dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/CL_btn"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/football_icon"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Top Scorer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:width="140dp"
+        android:textSize="14sp"
+        android:height="60dp"
+        android:textStyle="bold"
+        android:id="@+id/topscorer_btn"
+        android:layout_alignTop="@+id/CL_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+    <Button
+        android:text="Points Table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:width="140dp"
+        android:textSize="14sp"
+        android:height="60dp"
+        android:textStyle="bold"
+        android:id="@+id/points_btn"
+        android:layout_below="@+id/points_table"
+        android:layout_alignStart="@+id/CL_btn" />
+
+    <ImageView
+        app:srcCompat="@drawable/football"
+        android:id="@+id/football_icon"
+        android:layout_marginTop="64dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/CL_btn" />
+
+    <ImageView
+        app:srcCompat="@drawable/points_table"
+        android:id="@+id/points_table"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/CL_btn"
+        android:layout_alignEnd="@+id/football_icon" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:id="@+id/main_announcement"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp" />
+
+</RelativeLayout>

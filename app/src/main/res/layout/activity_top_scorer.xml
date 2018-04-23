@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_top_scorer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="in.raman.raman.fifastar.TopScorer">
+
+    <TextView
+        android:text="Top Scorers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        app:srcCompat="@drawable/white"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/topImage" />
+
+    <Button
+        android:text="Prev"
+        android:layout_height="wrap_content"
+        android:id="@+id/previous_btn"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/next_Btn"
+        android:layout_alignBottom="@+id/next_Btn"
+        android:layout_alignStart="@+id/topImage"
+        android:layout_marginStart="14dp" />
+
+    <Button
+        android:text="next"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_Btn"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:layout_width="80dp"
+        android:layout_below="@+id/topImage"
+        android:layout_alignEnd="@+id/topImage"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:text="Loading...Please wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loading" />
+</RelativeLayout>

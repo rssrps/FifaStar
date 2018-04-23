@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voting"
+    android:layout_width="match_parent"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    tools:context="in.raman.raman.fifastar.Voting">
+
+    <ImageView
+        android:layout_width="150dp"
+        app:srcCompat="@drawable/white"
+        android:layout_alignTop="@+id/one"
+        android:layout_toEndOf="@+id/one"
+        android:layout_marginStart="20dp"
+        android:id="@+id/two"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:text="Voting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:id="@+id/textView9"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:text="Vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/b2"
+        android:layout_alignBaseline="@+id/b1"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="Loading...Please wait "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:id="@+id/loading"
+        android:layout_alignBottom="@+id/two"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/percent1"
+        android:layout_below="@+id/b1"
+        android:gravity="center"
+        android:layout_alignStart="@+id/one"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/percent2"
+        android:layout_alignBaseline="@+id/percent1"
+        android:layout_alignBottom="@+id/percent1"
+        android:layout_alignEnd="@+id/two"
+        android:layout_marginEnd="40dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        app:srcCompat="@drawable/white"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="99dp"
+        android:id="@+id/one"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:textColor="#ffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginStart="60dp"
+        android:layout_below="@+id/one"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/voteCaption"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_above="@+id/two"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/announce"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/percent2"
+        android:layout_toStartOf="@+id/voteCaption" />
+
+    <Button
+        android:text="View Chart"
+        android:layout_height="wrap_content"
+        android:id="@+id/chart"
+        android:layout_marginBottom="19dp"
+        android:textColor="#ffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp" />
+
+</RelativeLayout>

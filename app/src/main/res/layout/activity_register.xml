@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.raman.raman.fifastar.Register">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="70dp"
+        android:id="@+id/name"
+        android:hint="Full name "
+        android:layout_width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/branch"
+        android:hint="Branch" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/branch"
+        android:layout_alignStart="@+id/branch"
+        android:layout_marginTop="10dp"
+        android:id="@+id/year"
+        android:hint="Year" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/year"
+        android:layout_alignStart="@+id/year"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contact"
+        android:hint="Whatsapp Contact" />
+
+    <TextView
+        android:text="Register for Tournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:id="@+id/registerBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp" />
+
+    <RadioButton
+        android:text="Fifa 15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/f15"
+        android:layout_alignBaseline="@+id/f17"
+        android:layout_alignBottom="@+id/f17"
+        android:layout_toEndOf="@+id/registerBtn" />
+
+    <RadioButton
+        android:text="Fifa 17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/f17"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/registerBtn"
+        android:layout_toStartOf="@+id/registerBtn" />
+
+    <TextView
+        android:text="Choose you preference:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_above="@+id/f15"
+        android:layout_alignStart="@+id/contact"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

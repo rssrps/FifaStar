@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:layout_gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_bollywood"
+            android:layout_width="350dp"
+            android:layout_height="340dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/basic_2" />
+
+        <ImageView
+            android:id="@+id/iv_hollywood"
+            android:layout_width="350dp"
+            android:layout_height="340dp"
+            android:layout_alignLeft="@+id/iv_bollywood"
+            android:layout_below="@+id/iv_bollywood"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/scoring" />
+
+        <ImageView
+            android:id="@+id/iv_animated"
+            android:layout_width="350dp"
+            android:layout_height="340dp"
+            android:layout_alignLeft="@+id/iv_hollywood"
+            android:layout_below="@+id/iv_hollywood"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/groupstage" />
+
+        <ImageView
+            android:id="@+id/iv_hindhi_dub"
+            android:layout_width="350dp"
+            android:layout_height="340dp"
+            android:layout_alignLeft="@+id/iv_animated"
+            android:layout_below="@+id/iv_animated"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/clrules" />
+
+        <ImageView
+            android:id="@+id/iv_other"
+            android:layout_width="350dp"
+            android:layout_height="340dp"
+            android:layout_alignLeft="@+id/iv_hindhi_dub"
+            android:layout_below="@+id/iv_hindhi_dub"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/others" />
+
+    </RelativeLayout>
+</ScrollView >

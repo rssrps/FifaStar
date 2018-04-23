@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_points_table"
+    android:layout_width="match_parent"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    tools:context="in.raman.raman.fifastar.PointsTable">
+
+    <ImageView
+        app:srcCompat="@android:drawable/stat_notify_call_mute"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/image"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/group_id"
+        android:layout_centerHorizontal="true"
+        android:layout_height="350dp"
+        android:layout_width="340dp" />
+
+    <TextView
+        android:text="Group B"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/groupA"
+        android:layout_toEndOf="@+id/groupA"
+        android:layout_marginStart="3dp"
+        android:id="@+id/groupB"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="82dp" />
+
+    <TextView
+        android:text="Group C"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/groupB"
+        android:layout_toEndOf="@+id/groupB"
+        android:layout_marginStart="3dp"
+        android:id="@+id/groupC"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="82dp" />
+
+    <TextView
+        android:text="Group D"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/groupC"
+        android:layout_toEndOf="@+id/groupC"
+        android:layout_marginStart="3dp"
+        android:id="@+id/groupD"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="82dp" />
+
+    <TextView
+        android:text="Group A"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:id="@+id/groupA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:layout_width="82dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="-- Points Table --"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/group_id"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/groupB"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Loading...Please wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingTxt"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
